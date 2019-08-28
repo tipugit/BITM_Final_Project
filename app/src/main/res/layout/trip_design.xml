@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="10dp"
+    android:foreground="@drawable/trip_background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:id="@+id/tripImageIv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@color/ColorBlackLite"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_weather"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/tripTittleTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Trip Tittle"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            app:fontFamily="@font/trip_name_font" />
+
+        />
+
+        <TextView
+            android:id="@+id/tripDateTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tripTittleTvId"
+            android:layout_margin="10dp"
+            android:text="17-09-2019"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trip_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/detailsBtnId"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            android:background="@color/colorSpest"
+            android:text="Details"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+
+            />
+
+        <Button
+            android:id="@+id/memoryBtnId"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            android:background="@color/colorSpest"
+            android:text="Memories"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+
+            />
+
+        <Button
+            android:id="@+id/UpdateBtnId"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            android:background="@color/colorSpest"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

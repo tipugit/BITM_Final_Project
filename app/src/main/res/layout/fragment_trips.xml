@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TripsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/appNameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Travela"
+                    android:textSize="30sp"
+                    android:background="@color/colorOrange"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/trip_name_font"
+                    android:paddingLeft="15sp"
+                    />
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_below="@+id/appNameId"
+                    android:id="@+id/profileIvId"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/tipu"
+                    android:layout_margin="10dp"
+                    app:civ_border_color="@color/colorOrange"
+                    app:civ_border_width="2dp"
+                    />
+
+
+
+                <TextView
+
+                    android:layout_margin="5dp"
+                    android:id="@+id/grettingTvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Morning"
+                    android:textSize="15dp"
+                    android:typeface="monospace"
+                    android:layout_toRightOf="@+id/profileIvId"
+                    android:layout_below="@+id/appNameId"
+                    />
+
+                <TextView
+
+
+                    android:id="@+id/profileNameTvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipu Sultan"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="25dp"
+                    android:typeface="serif"
+                    android:layout_toRightOf="@+id/profileIvId"
+                    android:layout_below="@+id/grettingTvId"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/grettingTvId"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/weatherTvId"
+
+                    android:drawableTop="@drawable/ic_weather_sign"
+                    android:text="30°"
+                    android:layout_alignParentRight="true" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RvId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_labelStyle="@style/fab_design"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:fab_addButtonColorNormal="@color/colorOrange"
+            >
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_icon="@drawable/ic_trip_white"
+                app:fab_size="mini"
+                app:fab_colorNormal="@color/colorOrange"
+                app:fab_title="Add New Trip"
+
+
+
+                />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_icon="@drawable/ic_gps"
+                app:fab_size="mini"
+                app:fab_colorNormal="@color/colorOrange"
+                app:fab_title="Nearby"
+
+
+
+                />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fab_icon="@drawable/ic_weather"
+                app:fab_size="mini"
+                app:fab_colorNormal="@color/colorOrange"
+                app:fab_title="Weather"
+
+
+
+                />
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
